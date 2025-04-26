@@ -78,13 +78,23 @@
     </nav>
   </header>
 
+  <h2>Projects</h2>
+<ul>
+  <li><a href="#project1">Project 001: Three Phase Power Measurement with MAXQ3183</a></li>
+  <li><a href="#project2">Project 002: Battery-Integrated DC-DC Converter Design</a></li>
+</ul>
+
+
+
+  
   <div class="section-container">
     <div class="container">
       <div class="row">
-        
-        <div class="col-sm-8 col-sm-offset-2 section-container-spacer">
+          <div class="col-sm-8 col-sm-offset-2 section-container-spacer">
           <div class="text-center">
-            <h1 class="h2">Project 001: Three Phase Power Measurement with MAXQ3183 using SPI Communication</h1>
+            <h3 id="project1" style="font-size: 2.5rem; font-weight: bold;">
+              Project 001: Three Phase Power Measurement with MAXQ3183 using SPI Communication
+            </h3>
             <p>This project demonstrates the design and implementation of a complete three-phase power monitoring system using the Philips P89V51RD2 microcontroller and the MAXIM MAXQ3183 energy metering chip.</p>
             <p>On the hardware side, I integrated precision voltage dividers and current transformers (CT1052) to accurately sense power parameters across all three phases. The components were carefully laid out on custom-designed PCBs, ensuring reliable signal flow and electrical isolation where needed. Communication between the microcontroller and energy metering chip was established using the SPI interface, while the output data was displayed in real-time on an LCD screen and transmitted to a PC via RS-232 for logging and analysis.</p>
             <p>On the software side, I developed embedded C code to configure the MAXQ3183 for continuous data acquisition and to interpret real-time voltage, current, power factor, and energy readings. The firmware running on the Philips microcontroller managed data retrieval, error checking, and user interface logic, including dynamic updates to the LCD. A basic PC-side application was also written to receive and visualize data, enabling remote monitoring and diagnostics.</p>
@@ -118,7 +128,9 @@
 
         <div class="col-sm-8 col-sm-offset-2 section-container-spacer">
           <div class="text-center">
-            <h1 class="h2">Project 002: Battery-Integrated DC-DC Converter Design</h1>
+            <h3 id="project2" style="font-size: 2.5rem; font-weight: bold;">
+              Project 002: Battery-Integrated DC-DC Converter Design
+            </h3>
             <p>I designed and developed innovative battery-integrated DC-DC converters tailored for low-voltage off-grid DC systems, with a focus on enhancing power efficiency, reliability, and integration. On the hardware front, I prototyped multiple advanced converter topologies, such as the Battery Integrated Boost Converter (BBIC), Tapped Inductor Converter (BITIC), and high-gain converters like the Switched Inductor Boost (SIBIC) and Quadratic Boost (QBIC). Each converter was experimentally validated using custom-built setups including digital signal processors (DSPs), current/voltage sensors, and precise power electronic circuitry. These designs not only reduced the number of components but also improved voltage gain and power flow flexibility — critical for renewable-powered applications like solar homes, electric vehicles, and portable energy systems.</p>
             <p>On the software side, I developed comprehensive control algorithms and performed small-signal modeling using state-space techniques to analyze system stability, efficiency, and dynamic performance under varying loads. A key highlight was my implementation of decoupled dual-loop control for battery management and load voltage regulation, which mitigated interaction issues common in multi-loop systems. One of the most distinct aspects of my work was the integration of battery pulse charging/discharging features within a single converter, allowing for compact, efficient, and cost-effective energy systems. This combination of optimized hardware design and intelligent software control makes my solutions ideal for clients looking for end-to-end development of power electronics systems — from conceptual design to working prototypes.</p>
             <p><strong>Related Details:</strong> <a href="https://shodhganga.inflibnet.ac.in/handle/10603/557002" target="_blank">Click here for detailed information</a></p>

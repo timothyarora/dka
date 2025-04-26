@@ -12,29 +12,29 @@
   <!-- Disable tap highlight on IE -->
   <meta name="msapplication-tap-highlight" content="no">
   
-  <link rel="apple-touch-icon" sizes="180x180" href="/static/assets/apple-icon-180x180.png">
-  <link href="/static/assets/favicon.ico" rel="icon">
+  <link rel="apple-touch-icon" sizes="180x180" href="./static/assets/apple-icon-180x180.png">
+  <link href="./static/assets/favicon.ico" rel="icon">
 
   <title>Power Electronics Projects</title>  
 
-  <link href="/static/assets/main.3f6952e4.css" rel="stylesheet">
+  <link href="./main.3f6952e4.css" rel="stylesheet">
 
   <style>
     body {
-      font-size: 18pt;
-      text-align: justify;
-      line-height: 1.6;
-      margin-left: 20px;
-      margin-right: 20px;
+      font-size: 18pt; /* Set the font size to 24pt */
+      text-align: justify; /* Justify the text */
+      line-height: 1.6; /* Increase line height for readability */
+      margin-left: 20px; /* Add margin to the left */
+      margin-right: 20px; /* Add margin to the right */
     }
 
     p {
-      text-align: justify;
-      font-size: 18pt;
+      text-align: justify; /* Justify the paragraph text */
+      font-size: 18pt; /* Set the font size to 24pt */
     }
 
     h1, h2 {
-      font-size: 28pt;
+      font-size: 28pt; /* Increase heading size for better visibility */
     }
 
     .text-center {
@@ -44,7 +44,7 @@
     .section-container {
       margin-left: auto;
       margin-right: auto;
-      max-width: 1000px;
+      max-width: 1000px; /* Restrict the content width to a max of 1000px */
     }
   </style>
 </head>
@@ -55,23 +55,23 @@
   <div id="site-border-top"></div>
   <div id="site-border-bottom"></div>
 
-  <!-- Header -->
+  <!-- Add your content of header -->
   <header>
     <nav class="navbar navbar-fixed-top navbar-default">
       <div class="container">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
 
         <div class="collapse navbar-collapse" id="navbar-collapse">
           <ul class="nav navbar-nav">
-            <li><a href="/index.html" title="">01 : Home</a></li>
-            <li><a href="/works.html" title="">02 : Works</a></li>
-            <li><a href="/about.html" title="">03 : About me</a></li>
-            <li><a href="/contact.html" title="">04 : Contact</a></li>
+            <li><a href="./index.html" title="">01 : Home</a></li>
+            <li><a href="./works.html" title="">02 : Works</a></li>
+            <li><a href="./about.html" title="">03 : About me</a></li>
+            <li><a href="./contact.html" title="">04 : Contact</a></li>
           </ul>
         </div> 
       </div>
@@ -79,111 +79,120 @@
   </header>
 
   <h2>Projects</h2>
-  <ul>
-    <li><a href="#project1">Project 001: Three Phase Power Measurement with MAXQ3183</a></li>
-    <li><a href="#project2">Project 002: Battery-Integrated DC-DC Converter Design</a></li>
-    <li><a href="#project3">Project 003: MATLAB Coding and Simulation Skills Demonstration</a></li>
-  </ul>
+<ul>
+  <li><a href="#project1">Project 001: Three Phase Power Measurement with MAXQ3183</a></li>
+  <li><a href="#project2">Project 002: Battery-Integrated DC-DC Converter Design</a></li>
+  <li><a href="#project3">Project 003: MATLAB Coding and Simulation Skills Demonstration</a></li>
+</ul>
 
+  
   <div class="section-container">
     <div class="container">
       <div class="row">
-        <!-- Project 001 -->
-        <div class="col-sm-8 col-sm-offset-2 section-container-spacer">
+          <div class="col-sm-8 col-sm-offset-2 section-container-spacer">
           <div class="text-center">
             <h3 id="project1" style="font-size: 2.5rem; font-weight: bold;">
               Project 001: Three Phase Power Measurement with MAXQ3183 using SPI Communication
             </h3>
             <p>This project demonstrates the design and implementation of a complete three-phase power monitoring system using the Philips P89V51RD2 microcontroller and the MAXIM MAXQ3183 energy metering chip.</p>
-            <p>On the hardware side, I integrated precision voltage dividers and current transformers (CT1052) to accurately sense power parameters across all three phases. Communication between the microcontroller and energy metering chip was established using SPI, and output data was displayed on an LCD and transmitted to PC via RS-232.</p>
-            <p>On the software side, I developed embedded C code to configure the MAXQ3183 for continuous data acquisition and manage real-time display and logging. I also built a basic PC-side app for remote data monitoring and diagnostics.</p>
-            <p><strong>Related PDF Document:</strong> <a href="/static/assets/Interfacing_of_Phillips_controller_with_MAXQ3183.pdf" target="_blank">Click here to view the PDF</a></p>
+            <p>On the hardware side, I integrated precision voltage dividers and current transformers (CT1052) to accurately sense power parameters across all three phases. The components were carefully laid out on custom-designed PCBs, ensuring reliable signal flow and electrical isolation where needed. Communication between the microcontroller and energy metering chip was established using the SPI interface, while the output data was displayed in real-time on an LCD screen and transmitted to a PC via RS-232 for logging and analysis.</p>
+            <p>On the software side, I developed embedded C code to configure the MAXQ3183 for continuous data acquisition and to interpret real-time voltage, current, power factor, and energy readings. The firmware running on the Philips microcontroller managed data retrieval, error checking, and user interface logic, including dynamic updates to the LCD. A basic PC-side application was also written to receive and visualize data, enabling remote monitoring and diagnostics.</p>
+            <p>This end-to-end solution demonstrates my capability in embedded system design, from low-level hardware interfacing to high-level data presentation, ideal for industrial or energy management applications.</p>
+            <p><strong>Related PDF Document:</strong> <a href="./static/assets/Interfacing_of_Phillips_controller_with_MAXQ3183.pdf" target="_blank">Click here to view the PDF</a></p>
           </div>
         </div>
+
+        <!-- Project 001: End -->
 
         <div class="col-md-12">
-          <div id="myCarousel1" class="carousel slide projects-carousel">
+          <div id="myCarousel" class="carousel slide projects-carousel">
+            <!-- Carousel items for Project 002 -->
             <div class="carousel-inner">
-              <div class="item active">
-                <div class="row">
-                  <div class="col-sm-4">
-                    <a href="/work.html" title="" class="black-image-project-hover">
-                      <img src="/static/assets/images/1.jpg" alt="Power Measurement" class="img-responsive">
-                    </a>
-                    <p class="text-center">Image 1: Power Measurement using MAXQ3183</p>
-                  </div>
+                <div class="item active">
+                    <div class="row">
+                        <div class="col-sm-4">
+                          <a href="./work.html" title="" class="black-image-project-hover">
+                            <img src="./static/assets/images/1.jpg" alt="" class="img-responsive">
+                          </a>
+                          <p class="text-center">Image 1: Power Measurement using MAXQ3183</p>
+                        </div>
+                    </div>
+                    <!--/row-->
                 </div>
-              </div>
+                <!--/item-->
             </div>
-          </div>
+            <!--/carousel-inner--> 
+         </div>
         </div>
 
-        <!-- Project 002 -->
         <div class="col-sm-8 col-sm-offset-2 section-container-spacer">
           <div class="text-center">
             <h3 id="project2" style="font-size: 2.5rem; font-weight: bold;">
               Project 002: Battery-Integrated DC-DC Converter Design
             </h3>
-            <p>I designed innovative battery-integrated DC-DC converters for low-voltage off-grid DC systems. I developed and validated advanced topologies like BBIC, BITIC, and QBIC, integrating battery management and high-efficiency features for solar homes, EVs, and portable systems.</p>
-            <p>On the software side, I developed control algorithms and small-signal models for system stability and dynamic performance. My designs allow compact, flexible energy solutions combining hardware and intelligent control systems.</p>
+            <p>I designed and developed innovative battery-integrated DC-DC converters tailored for low-voltage off-grid DC systems, with a focus on enhancing power efficiency, reliability, and integration. On the hardware front, I prototyped multiple advanced converter topologies, such as the Battery Integrated Boost Converter (BBIC), Tapped Inductor Converter (BITIC), and high-gain converters like the Switched Inductor Boost (SIBIC) and Quadratic Boost (QBIC). Each converter was experimentally validated using custom-built setups including digital signal processors (DSPs), current/voltage sensors, and precise power electronic circuitry. These designs not only reduced the number of components but also improved voltage gain and power flow flexibility — critical for renewable-powered applications like solar homes, electric vehicles, and portable energy systems.</p>
+            <p>On the software side, I developed comprehensive control algorithms and performed small-signal modeling using state-space techniques to analyze system stability, efficiency, and dynamic performance under varying loads. A key highlight was my implementation of decoupled dual-loop control for battery management and load voltage regulation, which mitigated interaction issues common in multi-loop systems. One of the most distinct aspects of my work was the integration of battery pulse charging/discharging features within a single converter, allowing for compact, efficient, and cost-effective energy systems. This combination of optimized hardware design and intelligent software control makes my solutions ideal for clients looking for end-to-end development of power electronics systems — from conceptual design to working prototypes.</p>
             <p><strong>Related Details:</strong> <a href="https://shodhganga.inflibnet.ac.in/handle/10603/557002" target="_blank">Click here for detailed information</a></p>
           </div>
         </div>
 
+        <!-- Image for Project 002 -->
         <div class="col-md-12">
-          <div id="myCarousel2" class="carousel slide projects-carousel">
+          <div id="myCarousel" class="carousel slide projects-carousel">
+            <!-- Carousel items for Project 002 -->
             <div class="carousel-inner">
-              <div class="item active">
-                <div class="row">
-                  <div class="col-sm-4">
-                    <a href="/work.html" title="" class="black-image-project-hover">
-                      <img src="/static/assets/images/2.jpg" alt="DC-DC Converter" class="img-responsive">
-                    </a>
-                    <p class="text-center">Image 2: End-to-End Development of DC-DC Converter Systems</p>
-                  </div>
+                <div class="item active">
+                    <div class="row">
+                        <div class="col-sm-4">
+                          <a href="./work.html" title="" class="black-image-project-hover">
+                            <img src="./static/assets/images/2.jpg" alt="End-to-End Development of DC-DC Converter Systems" class="img-responsive">
+                          </a>
+                          <p class="text-center">Image 2: End-to-End Development of DC-DC Converter Systems</p>
+                        </div>
+                    </div>
+                    <!--/row-->
                 </div>
-              </div>
+                <!--/item-->
             </div>
-          </div>
+            <!--/carousel-inner--> 
+         </div>
         </div>
-
-        <!-- Project 003 -->
         <div class="col-sm-8 col-sm-offset-2 section-container-spacer">
           <div class="text-center">
             <h3 id="project3" style="font-size: 2.5rem; font-weight: bold;">
               Project 003: MATLAB Coding and Simulation Skills Demonstration
             </h3>
-            <p>In this project, I demonstrate MATLAB coding and simulation skills through script-based modeling and graphical outputs. The first image shows a 3D surface plot generated using <code>Fig11b.m</code>, while the second image displays Bode diagrams from a control systems script <code>BI2Cclosed36.m</code>. These works reflect my skills in mathematical modeling, control system analysis, and data visualization.</p>
+            <p>In this showcase, I demonstrate my ability to perform coding and simulations using MATLAB. The screenshots highlight different aspects of my work in MATLAB, involving script writing, simulation execution, and graphical output generation. In the first image, I created a 3D surface plot by writing a script (<code>Fig11b.m</code>) which involves defining variables, creating a mesh grid, performing calculations, and visualizing results using the <code>surf</code> function. This figure shows a smooth 3D surface representing the behavior of a mathematical model. The workspace clearly displays the variables and matrices involved, reflecting a strong understanding of MATLAB data handling and mathematical operations.</p>
+            <p>In the second image, I showcase more advanced simulations involving control systems analysis. I wrote a script (<code>BI2Cclosed36.m</code>) to compute and plot Bode diagrams of loop gain transfer functions, important in control system stability analysis. The Bode plots are generated to show both magnitude and phase variations over frequency for different system parameters. Multiple figures are plotted simultaneously, displaying the depth of analysis and the capability to manage complex simulations efficiently. Overall, these screenshots represent my proficiency in MATLAB programming, mathematical modeling, simulation handling, and data visualization, crucial skills for engineering and scientific applications.</p>
           </div>
         </div>
-
+        
+        <!-- Images for Project 003 -->
         <div class="col-md-12">
-          <div id="myCarousel3" class="carousel slide projects-carousel">
+          <div id="myCarousel" class="carousel slide projects-carousel">
+            <!-- Carousel items for Project 003 -->
             <div class="carousel-inner">
               <div class="item active">
                 <div class="row">
                   <div class="col-sm-4">
-                    <a href="/work.html" title="" class="black-image-project-hover">
-                      <img src="/static/assets/images/3.jpg" alt="MATLAB 3D Surface Plot" class="img-responsive">
+                    <a href="./work.html" title="" class="black-image-project-hover">
+                      <img src="./static/assets/images/3.jpg" alt="MATLAB 3D Surface Plot" class="img-responsive">
                     </a>
                     <p class="text-center">Image 3: MATLAB 3D Surface Plot from <code>Fig11b.m</code></p>
                   </div>
-
+        
                   <div class="col-sm-4">
-                    <a href="/work.html" title="" class="black-image-project-hover">
-                      <img src="/static/assets/images/4.jpg" alt="MATLAB Bode Diagram Simulation" class="img-responsive">
+                    <a href="./work.html" title="" class="black-image-project-hover">
+                      <img src="./static/assets/images/4.jpg" alt="MATLAB Bode Diagram Simulation" class="img-responsive">
                     </a>
                     <p class="text-center">Image 4: MATLAB Bode Diagram Simulation from <code>BI2Cclosed36.m</code></p>
                   </div>
                 </div>
+                <!--/row-->
               </div>
+              <!--/item-->
             </div>
+            <!--/carousel-inner--> 
           </div>
         </div>
-
-      </div> <!-- /row -->
-    </div> <!-- /container -->
-  </div> <!-- /section-container -->
-
-</body>
-</html>
+               

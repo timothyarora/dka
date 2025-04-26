@@ -1,0 +1,1 @@
+Experimental prototype A. BIC Converter B. DSP peripheral Board (TMS320F28335). C. Sensor Board (voltage sensor ’LV25P’ and current sensor ‘LA55P’). D. Digital storage Oscilloscope. E. DC resistive Load. F.   Lead Acid Battery.
